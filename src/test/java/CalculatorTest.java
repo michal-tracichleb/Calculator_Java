@@ -22,4 +22,14 @@ public class CalculatorTest {
         // Assert
         assertEquals(2, result);
     }
+
+    @Test
+    public void shouldReturnProductOfTwoNumbers() {
+        // Arrange
+        Calculator calculator = new Calculator();
+        // Act
+        int result = calculator.multiply(4, 3);
+        // Assert
+        assertEquals(12, result);
+    }
 }
