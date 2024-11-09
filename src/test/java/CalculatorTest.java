@@ -42,4 +42,12 @@ public class CalculatorTest {
         // Assert
         assertEquals(2.5, result, 0.00001);
     }
+
+    @Test
+    public void shouldThrowExceptionWhenDividingByZero() {
+        // Arrange
+        Calculator calculator = new Calculator();
+        // Act & Assert
+        assertThrows(ArithmeticException.class, () -> calculator.divide(10, 0));
+    }
 }
