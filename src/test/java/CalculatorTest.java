@@ -32,4 +32,14 @@ public class CalculatorTest {
         // Assert
         assertEquals(12, result);
     }
+
+    @Test
+    public void shouldReturnQuotientOfTwoNumbers() {
+        // Arrange
+        Calculator calculator = new Calculator();
+        // Act
+        int result = calculator.divide(10, 2);
+        // Assert
+        assertEquals(5, result);
+    }
 }
