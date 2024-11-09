@@ -8,9 +8,9 @@ public class CalculatorTest {
         // Arrange
         Calculator calculator = new Calculator();
         // Act
-        int result = calculator.add(2, 3);
+        double result = calculator.add(2.2, 3);
         // Assert
-        assertEquals(5, result);
+        assertEquals(5.2, result, 0.00001);
     }
 
     @Test
@@ -18,9 +18,9 @@ public class CalculatorTest {
         // Arrange
         Calculator calculator = new Calculator();
         // Act
-        int result = calculator.subtract(5, 3);
+        double result = calculator.subtract(5.2, 3.1);
         // Assert
-        assertEquals(2, result);
+        assertEquals(2.1, result, 0.00001);
     }
 
     @Test
@@ -28,9 +28,9 @@ public class CalculatorTest {
         // Arrange
         Calculator calculator = new Calculator();
         // Act
-        int result = calculator.multiply(4, 3);
+        double result = calculator.multiply(4.4, 3);
         // Assert
-        assertEquals(12, result);
+        assertEquals(13.2, result, 0.00001);
     }
 
     @Test
@@ -38,8 +38,8 @@ public class CalculatorTest {
         // Arrange
         Calculator calculator = new Calculator();
         // Act
-        int result = calculator.divide(10, 2);
+        double result = calculator.divide(10, 4);
         // Assert
-        assertEquals(5, result);
+        assertEquals(2.5, result, 0.00001);
     }
 }
